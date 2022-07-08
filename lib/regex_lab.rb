@@ -1,8 +1,21 @@
 def starts_with_a_vowel?(word)
+    if word.upcase.match(/^[AEIOU]./)
+        return true
+    else
+        return false
+    end
+
 
 end
 
 def words_starting_with_un_and_ending_with_ing(text)
+    uning = ""
+    if text.upcase.scan(/^.{0,2}/) == "UN"
+        if text.upcase.scan(/.{0,3}$/) == "ING"
+            uning << text
+        end
+    end
+    
 
 end
 
